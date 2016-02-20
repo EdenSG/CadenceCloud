@@ -1,7 +1,7 @@
 body {
   background-color: rgba(180, 207, 217, 0.82);
   background-image: url('../images/splatters.svg');
-  background-size: contain;
+  background-size: cover;
   font: 400 1.125em/1.38 Lora;
   color: rgb(0, 0, 0);
 }
@@ -11,25 +11,34 @@ body {
   margin: 1em auto 2em;
   padding: 0.778em;
   min-width: 30%;
-  border: 3px solid rgb(14, 25, 27);
+  border: 3px solid #0e191b;
   font-family: Karla-Bold;
   font-size: 1em;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(14, 25, 27);
+  color: #0e191b;
   transition: all .1s cubic-bezier(.55,0,.1,1);
+  box-shadow: 0 9px 11px -5px rgba(0,0,0,.1),0 18px 28px 2px rgba(0,0,0,.1),0 7px 34px 6px rgba(0,0,0,.12),
+  0 9px 11px -5px rgba(0,0,0,.1) inset,0 18px 28px 2px rgba(0,0,0,.1) inset,0 7px 34px 6px rgba(0,0,0,.12) inset;
+  text-shadow: 0 9px 11px rgba(0,0,0,0.2);
 }
 .cta:hover {
-  background-color: #0e191b;
+  background-color: #2a333b;
+  border-color: #2a333b;
   color: rgb(244, 249, 251);
+  box-shadow: 0 9px 11px -5px rgba(0,0,0,.2),0 18px 28px 2px rgba(0,0,0,.14),0 7px 34px 6px rgba(0,0,0,.12);
 }
 .cta:active {
   background-color: #1bc381;
   color: rgb(14, 25, 27);
+  box-shadow: 0 9px 11px -5px rgba(0,0,0,.2),0 18px 28px 2px rgba(0,0,0,.14),0 7px 34px 6px rgba(0,0,0,.12);
+  text-shadow: none;
 }
 .cta:focus {
   outline: 3px solid #1bc381;
+  box-shadow: box-shadow: 0 9px 11px -3px rgba(0,0,0,.1),0 18px 28px 4px rgba(0,0,0,.1),0 7px 34px 8px rgba(0,0,0,.12),
+  0 9px 11px -3px rgba(0,0,0,.1) inset,0 18px 28px 4px rgba(0,0,0,.1) inset,0 7px 34px 8px rgba(0,0,0,.12) inset;
 }
 
 .hr {
@@ -46,7 +55,7 @@ body {
 .titlecontainer {
   float: left;
   width: 100%;
-  border-bottom: 0.38em solid rgb(55, 231, 162);
+  border-bottom: 0.38em solid #37e7a2;
   background: rgba(180, 207, 217, 0.54);
   background: linear-gradient(360deg, rgba(180, 207, 217, 0.54) 0%, rgba(0, 0, 0, 0) 42%), url('../images/photo-1439737567250-e9ea931e97a4.jpeg') #2a333b;
   background-repeat: repeat, no-repeat;
@@ -71,8 +80,11 @@ body {
   width: 80%;
   max-width: 80em;
   margin: auto;
-  padding: 4.889em 1.944em 1.944em;
-  background-color: rgb(244, 249, 251);
+  padding: 4.9em 4em 4em;
+  background-color: rgba(244, 249, 251, 1);
+  margin-bottom: 5em;
+  border-bottom: 0.38em solid #37e7a2;
+  box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
 }
 .container p {
   margin-top: 1.056em;
@@ -96,6 +108,8 @@ body {
 .feature {
   clear: both;
   display: flex;
+  margin-left: -1.5em;
+  margin-right: -1.5em;
   flex-direction: row;
   align-items: center;
 }
@@ -105,9 +119,6 @@ body {
 .feature .description {
   flex-grow: 1;
   padding: 1.5em;
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: center;*/
 }
 .feature .icon {
   height: 6em;
@@ -117,11 +128,13 @@ body {
   background: #37e7a2;
   border-radius: 100%;
   flex: 0 0 6em;
+  fill: #2a333b;
+  box-shadow: 0 9px 11px -5px rgba(0,0,0,.2),0 18px 28px 2px rgba(0,0,0,.14),0 7px 34px 6px rgba(0,0,0,.12);
 }
 
 @media(max-width: 915px) {
   .container {
-    padding-top: 3em;
+    padding: 3em 2em 2em;
   }
 
   .titlecontainer {
@@ -144,8 +157,9 @@ body {
   }
 
   .container {
-    padding-top: 2em;
+    padding: 2em 1em 1em;
     width: 100%;
+
   }
 
   .container .cta {
