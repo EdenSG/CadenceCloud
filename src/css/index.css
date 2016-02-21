@@ -57,7 +57,7 @@ body {
   background: linear-gradient(360deg, rgba(180, 207, 217, 0.54) 0%, rgba(0, 0, 0, 0) 42%), url('../images/photo-1439737567250-e9ea931e97a4.jpeg') #2a333b;
   background-repeat: repeat, no-repeat;
   background-size: 100% 100%, cover;
-  background-position: 0% 0%, 50% 91%;
+  background-position: 0 1px, 50% 91%;
   background-attachment: scroll, scroll;
 }
 .title {
@@ -75,7 +75,7 @@ body {
 .container {
   clear: both;
   width: 80%;
-  max-width: 80em;
+  max-width: 90rem;
   margin: auto;
   padding: 4.9em 4em 4em;
   background-color: rgba(244, 249, 251, 1);
