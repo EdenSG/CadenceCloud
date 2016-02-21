@@ -3,7 +3,7 @@ body {
   background-image: url('../images/splatters.svg');
   background-size: cover;
   font: 400 1.125em/1.38 Lora;
-  color: rgb(0, 0, 0);
+  color: #0e191b;
 }
 
 .cta {
@@ -98,24 +98,28 @@ body {
 }
 .container h3 {
   font-family: "Karla", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: 600;
 }
 
 .feature {
   clear: both;
   display: flex;
-  margin-left: -1.5em;
-  margin-right: -1.5em;
   flex-direction: row;
   align-items: center;
+  text-align: right;
 }
 .feature:nth-of-type(2n) {
   flex-direction: row-reverse;
+  text-align: left;
 }
 .feature .description {
   flex-grow: 1;
   padding: 1.5em;
+  /*padding-left: 30%;*/
+}
+.feature .description p {
+  color: #2a333b;
 }
 .feature .icon {
   height: 6em;
@@ -132,6 +136,11 @@ body {
 @media(max-width: 915px) {
   .container {
     padding: 3em 2em 2em;
+  }
+
+  .feature {
+    margin-left: -1.5em;
+    margin-right: -1.5em;
   }
 
   .titlecontainer {
@@ -156,9 +165,7 @@ body {
   .container {
     padding: 2em 1em 1em;
     width: 100%;
-
   }
-
   .container .cta {
     width: 100%;
     padding: 0.6em;
