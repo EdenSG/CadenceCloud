@@ -1,0 +1,23 @@
+{
+  "name": "cadencecloud",
+  "version": "0.0.1",
+  "description": "A music hosting, organization and streaming service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdenSG/CadenceCloud.git"
+  },
+  "keywords": [
+    "music",
+    "streaming"
+  ],
+  "author": "Eden S.-G.",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/EdenSG/CadenceCloud/issues"
+  },
+  "homepage": "https://github.com/EdenSG/CadenceCloud#readme"
+}
